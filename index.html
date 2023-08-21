@@ -7,17 +7,26 @@
     <title>BMI Calculator</title>
   </head>
   <body>
-    <form action="" method="post" class="form">
+    <form action="/main.js" method="post" class="form">
       <h1>BMI Calculator</h1>
       <div class="inputs">
         <input
+          step="0.01"
+          name="weight"
           class="weight"
           type="number"
           required
           placeholder="Weight [Kg]"
         />
-        <input class="height" type="number" required placeholder="Height [m]" />
-        <button class="btn">Calculate</button>
+        <input
+          step="0.01"
+          class="height"
+          type="number"
+          required
+          placeholder="Height [m]"
+          name="height"
+        />
+        <button type="submit" class="btn">Calculate</button>
       </div>
       <!-- apare dinamic cu js -->
       <div class="result">
