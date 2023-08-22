@@ -39,3 +39,5 @@ The JavaScript file responsible for the BMI calculator functionality
 ## Website address
 
 https://test-bmi-calculator.surge.sh/
+
+inputs should contain the original values
