@@ -1,24 +1,41 @@
-# BMI-Calculator
+# BMI Calculator Documentation
 
-Design, develop and document a form to calculate the BMI (Body Mass Index) of a person
+This document provides a simple overview of the code that implements a BMI calculator on a web page. The calculator allows the user to input their weight and height to calculate and display their body mass index.
 
-- The form must have 2 inputs and a submit button
+## File Structure
 
-- The form must POST the data to itself or to another file which will calculate the BMI according to this formula: BMI = kg/m2
-- The inputs must be of the appropriate type.
-- The inputs should contain the original values after they where POSTed.
+### 1. index.html
 
-Requirements
+The HTML file contains the structure of the web page and the BMI calculator form
 
-The application must output a rounded value to 2 decimals. It should show the value near the same
-form that submitted the inputs.
+### 2. style.css
 
-Submitting your solution
-Using version control is encouraged but not mandatory. A link to that repository should be included.
-If git is not used please send the files zipped by email.
+The CSS for styling the page
 
-result.innerHTML = `
+### 3. main.js
 
-  <h4>Weight: ${weight} kg</h4>
-  <h4>Height: ${height} m</h4>
-  <h2>BMI: ${bmi}%</h2>`;
+The JavaScript file responsible for the BMI calculator functionality
+
+## File index.html
+
+- In the `<head>` section, metadata, charset, viewport, and page title are specified.
+- In the `<body>` section, the BMI calculator form is defined. It includes fields for weight and height, as well as a calculation button.
+- The calculation result will be displayed in an element with the class result.
+- A script `<script type="module" src="/main.js"></script>` is included to connect the calculator functionality from the JavaScript file main.js.
+
+## File main.js
+
+- The script begins by importing the CSS file style.css to apply appropriate styling.
+- A listener is defined for the "DOMContentLoaded" event, triggered when the entire page structure has loaded in the browser.
+- The query string from the page's URL is extracted to retrieve the weight and height parameters from the URL.
+- The BMI index is calculated using the standard formula: BMI = weight / (height \* height).
+- If valid values for weight, height, and BMI are present (not null or NaN), the result is displayed within the result element.
+- Otherwise, a default result with values "0 kg", "0 m", and "0%" is displayed.
+
+## Styling (style.css)
+
+- This file contains CSS styles to give the page a visually pleasing and easily understandable appearance.
+
+## Website address
+
+https://test-bmi-calculator.surge.sh/
