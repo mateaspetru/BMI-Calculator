@@ -37,7 +37,3 @@ The JavaScript file responsible for the BMI calculator functionality
 - This file contains CSS styles to give the page a visually pleasing and easily understandable appearance.
 
 ## Website address
-
-https://test-bmi-calculator.surge.sh/
-
-inputs should contain the original values

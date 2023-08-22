@@ -46,6 +46,7 @@ body {
 }
 .form input,
 .btn {
+  text-align: center;
   margin: 10px 0;
   width: 70%;
   height: 7%;
