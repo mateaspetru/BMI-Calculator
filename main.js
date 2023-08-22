@@ -13,9 +13,16 @@ document.addEventListener("DOMContentLoaded", (e) => {
   const height = param.get("height");
   const bmi = weight / (height * height);
 
-  result.innerHTML = `
+  if ((bmi != NaN, weight != null, height != null)) {
+    result.innerHTML = `
     <h1>Result</h1> 
     <h2>BMI: ${bmi.toFixed(2)}%</h2>`;
+  } else {
+    result.innerHTML = `
+  <h1>Result</h1> 
+  <h2>BMI: 0%</h2>`;
+  }
+
   weightInput.value = weight;
   heightInput.value = height;
 });
