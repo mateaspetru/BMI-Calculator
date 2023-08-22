@@ -16,3 +16,9 @@ form that submitted the inputs.
 Submitting your solution
 Using version control is encouraged but not mandatory. A link to that repository should be included.
 If git is not used please send the files zipped by email.
+
+result.innerHTML = `
+
+  <h4>Weight: ${weight} kg</h4>
+  <h4>Height: ${height} m</h4>
+  <h2>BMI: ${bmi}%</h2>`;
