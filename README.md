@@ -29,8 +29,7 @@ The JavaScript file responsible for the BMI calculator functionality
 - A listener is defined for the "DOMContentLoaded" event, triggered when the entire page structure has loaded in the browser.
 - The query string from the page's URL is extracted to retrieve the weight and height parameters from the URL.
 - The BMI index is calculated using the standard formula: BMI = weight / (height \* height).
-- If valid values for weight, height, and BMI are present (not null or NaN), the result is displayed within the result element.
-- Otherwise, a default result with values "0 kg", "0 m", and "0%" is displayed.
+- If valid values for BMI are present (not NaN), the result is displayed within the result element. Otherwise, a default result with values "0%" is displayed.
 
 ## Styling (style.css)
 
